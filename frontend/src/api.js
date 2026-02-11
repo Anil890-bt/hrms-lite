@@ -19,7 +19,7 @@ export const deleteEmployee = (employeeId) =>
 export const getAttendance = (employeeId, params = {}) =>
   api.get(`/api/attendance/${employeeId}`, { params });
 
-export const markAttendance = (data) => api.post("/api/attendance", data);
+export const markAttendance = (data) => api.post("/api/attendance/", data);
 
 export const getAttendanceSummary = () => api.get("/api/attendance/summary");
 
