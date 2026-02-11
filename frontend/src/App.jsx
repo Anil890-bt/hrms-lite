@@ -6,7 +6,7 @@ import EmployeesPage from "@/pages/EmployeesPage";
 import AttendancePage from "@/pages/AttendancePage";
 import ErrorBoundary from "@/components/ErrorBoundary";
 
-// HRMS Lite - Employee and Attendance Management System
+// HRMS Lite - Employee and Attendance Management System v1.0
 function App() {
   return (
     <BrowserRouter>
