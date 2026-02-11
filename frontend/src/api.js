@@ -13,7 +13,7 @@ export const getEmployees = () => api.get("/api/employees/");
 export const createEmployee = (data) => api.post("/api/employees/", data);
 
 export const deleteEmployee = (employeeId) =>
-  api.delete(`/api/employees/${employeeId}/`);
+  api.delete(`/api/employees/${employeeId}`);
 
 // Attendance APIs
 export const getAttendance = (employeeId, params = {}) =>
