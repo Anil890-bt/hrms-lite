@@ -8,19 +8,19 @@ const api = axios.create({
 });
 
 // Employee APIs
-export const getEmployees = () => api.get("/api/employees");
+export const getEmployees = () => api.get("/api/employees/");
 
-export const createEmployee = (data) => api.post("/api/employees", data);
+export const createEmployee = (data) => api.post("/api/employees/", data);
 
 export const deleteEmployee = (employeeId) =>
-  api.delete(`/api/employees/${employeeId}`);
+  api.delete(`/api/employees/${employeeId}/`);
 
 // Attendance APIs
 export const getAttendance = (employeeId, params = {}) =>
-  api.get(`/api/attendance/${employeeId}`, { params });
+  api.get(`/api/attendance/${employeeId}/`, { params });
 
-export const markAttendance = (data) => api.post("/api/attendance", data);
+export const markAttendance = (data) => api.post("/api/attendance/", data);
 
-export const getAttendanceSummary = () => api.get("/api/attendance/summary");
+export const getAttendanceSummary = () => api.get("/api/attendance/summary/");
 
 export default api;
